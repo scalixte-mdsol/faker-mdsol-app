@@ -26,6 +26,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem 'faker', '~> 1.4.3'
+gem 'faker_mdsol', git: 'git@github.com:mdsol/faker-mdsol.git', branch: 'feature/create_data_support_for_study_design/SC-001'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,0 +1,36 @@
+{
+    "capabilities": [
+        {
+            "browserName": "firefox",
+            "maxInstances": 10,
+            "seleniumProtocol": "WebDriver"
+        },
+        {
+            "browserName": "chrome",
+            "maxInstances": 10,
+            "seleniumProtocol": "WebDriver"
+        },
+        {
+            "platform": "WINDOWS",
+            "browserName": "internet explorer",
+            "maxInstances": 10,
+            "seleniumProtocol": "WebDriver"
+        },
+        {
+            "platform": "MAC",
+            "browserName": "safari",
+            "maxInstances": 10,
+            "seleniumProtocol": "WebDriver"
+        }
+    ],
+    "configuration": {
+        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+        "maxSession": 5,
+        "port": 5555,
+        "host": node_ip,
+        "register": true,
+        "registerCycle": 5000,
+        "hubPort": 4444,
+        "hubHost": hub_ip
+    }
+}
